@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import styles from '@/app/SideBar.module.css'
+import styles from '@/app/sideBar.module.css'
 
 function User() {
   return (
