@@ -3,31 +3,123 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --primary: #1E1E1E;
+  --secondary: #2C2C2C;
+  --third: #3C3C3C;
+  --fourth: #616161;
+
+  --font: #EAEAEA;
+  --font-dimm: #CCCCCC;
+
+  --font-placeholder: #888888;
+
+  --border-dark: #444444;
+  --border-mid: #666666;
+
+  --positive: #60E05D;
+  --negative: #FF5353;
+
+  --highlight: #5fa5f5;
+  --highlight-dark: #2e5a9d;
+
+  /* --primary: #FFFFFF;
+  --secondary: #C2C2C2;
+  --third: #C3C3C3;
+  --fourth: #161616;
+
+  --font: #030303;
+
+  --border-dark: #444444;
+  --border-mid: #666666;
+
+  --positive-green: #60E05D;
+  --negative-red: #E05D72;
+
+  --highlight: #38d4e9; */
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --primary: #1E1E1E;
+    --secondary: #2C2C2C;
+    --third: #3C3C3C;
+    --fourth: #616161;
+  
+    --font: #EAEAEA;
+  
+    --border-dark: #444444;
+    --border-mid: #666666;
+  
+    --positive-green: #60E05D;
+    --negative-red: #E05D72;
+  
+    --highlight: #8BDFEA;
   }
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  height: 100%;
+  min-height: 100vh;
+  overflow-y: hidden;
+
+  font-size: 12px;
+
+  transition: all 150ms ease;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: var(--primary);
+  color: var(--font);
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+main {
+  height: 100vh;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
   }
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--third);
+  border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--fourth);
+}
+
+.negative {
+  color: var(--negative);
+}
+
+.positive {
+  color: var(--positive);
+}
+
+.highlight {
+  color: var(--highlight);
 }

@@ -1,0 +1,9 @@
+import React from 'react'
+
+function Settings() {
+  return (
+    <div>Coming soon...</div>
+  )
+}
+
+export default Settings

@@ -1,0 +1,179 @@
+.containerTinymce {
+    overflow: auto;
+
+    min-height: 200px;
+}
+
+.root {
+    border: 1px solid var(--border-mid);
+    border-radius: 10px;
+
+    outline: none;
+
+    padding: 8px 16px 8px 16px;
+    margin: 8px 0 16px 0;
+
+    overflow: hidden;
+}
+
+.link {
+    cursor: pointer;
+
+    color: var(--highlight);
+
+    text-decoration: underline;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.strikethrough {
+    text-decoration: line-through;
+}
+
+.mainButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 20px;
+}
+
+.iconButton {
+    width: 20px;
+}
+
+.floatingMenuContainerVisual {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 4px;
+
+    background-color: var(--secondary);
+    border: 1px solid var(--border-dark);
+
+    border-radius: 16px;
+
+    padding: 0 16px 0 16px;
+}
+
+.iconInIconButton {
+    height: 28px;
+
+    color: var(--font);
+}
+
+.iconInIconButton:hover {
+    background-color: var(--third);
+}
+
+.openLinkContainerVisual {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    background-color: var(--third);
+    border: 1px solid var(--border-mid);
+
+    border-radius: 16px;
+
+    padding: 0 12px 0 16px;
+}
+
+.openLinkText {
+    color: var(--font);
+    font-size: 12px;
+}
+
+.openLinkText:hover {
+    text-decoration: underline;
+}
+
+.editLinkContainerVisual {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    background-color: var(--third);
+    border: 1px solid var(--border-mid);
+
+    border-radius: 16px;
+
+    padding: 0 16px 0 16px;
+}
+
+.editLinkInput {
+    height: 28px;
+
+    font-size: 12px;
+
+    background-color: transparent;
+
+    border: none;
+    outline: none;
+}
+
+.actionsTab {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+    gap: 4px;
+
+    height: 28px;
+
+    background-color: var(--secondary);
+
+    border: 1px solid var(--border-dark);
+    border-radius: 20px;
+
+    padding: 0 16px 0 16px;
+
+    width: fit-content;
+}
+
+.props {
+    width: 800px;
+
+    margin: 16px auto 16px auto;
+}
+
+.plaveholderDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: fit-content;
+}
+
+.editorSkeletonContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    gap: 16px;
+
+    height: fit-content;
+    width: fit-content;
+
+    margin-top: 10%;
+}
