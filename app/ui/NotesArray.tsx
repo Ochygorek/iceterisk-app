@@ -1,5 +1,5 @@
 import React, { Suspense, useState } from 'react'
-import styles from '../sideBar.module.css'
+import styles from '@/app/sideBar.module.css'
 import Note from './Note'
 import NotesSkeleton from './skeletons/NotesSkeleton'
 

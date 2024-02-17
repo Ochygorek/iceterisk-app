@@ -1,7 +1,7 @@
 'use client'
 
 import React, { Suspense, useEffect, useState } from 'react'
-import styles from '../sideBar.module.css'
+import styles from '@/app/sideBar.module.css'
 import { data } from '../lib/placeholder-data'
 import NoteMenu from './NoteMenu'
 import Image from 'next/image'

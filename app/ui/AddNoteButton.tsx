@@ -1,7 +1,7 @@
 "use client"
 
 import React, { Suspense, useState } from 'react'
-import styles from '../sideBar.module.css'
+import styles from '@/app/sideBar.module.css'
 import ButtonSkeleton from './skeletons/ButtonSkeleton'
 import { addNote } from '@/noteActions/notesArray'
 

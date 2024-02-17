@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import styles from '../SideBar.module.css'
+import styles from '@/app/SideBar.module.css'
 
 // fetch users email and display it next to circle Image
 function User() {

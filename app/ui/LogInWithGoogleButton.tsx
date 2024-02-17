@@ -2,7 +2,7 @@
 
 import Image from 'next/image'
 import React from 'react'
-import styles from '../logIn.module.css'
+import styles from '@/app/logIn.module.css'
 
 
 

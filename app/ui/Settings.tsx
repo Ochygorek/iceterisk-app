@@ -1,7 +1,7 @@
 'use client'
 
 import React, { Suspense, useState } from 'react';
-import styles from '../sideBar.module.css'
+import styles from '@/app/sideBar.module.css'
 import SettingsSkeleton from './skeletons/SettingsSkeleton';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
