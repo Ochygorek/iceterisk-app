@@ -161,3 +161,7 @@
 .homeLink:hover {
     background-color: var(--third);
 }
+
+.editorSkeletonContainer {
+    padding: 10% 0 0 0;
+}
