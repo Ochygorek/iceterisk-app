@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import styles from '@/app/main.module.css'
 import Link from 'next/link'
@@ -7,6 +9,7 @@ function page() {
   return (
     <div className={styles.home}>
       <h1 className={styles.homeHeading}>Welcome to Iceterisk</h1>
+      <span>Start by creating New Note.</span>
       <div className={styles.homeLinksContainer}>
         <span>Discover more:</span>
         <Link href={'https://iceterisk.com/docs'} target="_blank" className={styles.homeLink}>
