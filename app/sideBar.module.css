@@ -74,6 +74,10 @@
     background-color: var(--fourth);
 }
 
+.notesIndividual:active {
+    background-color: var(--secondary);
+}
+
 .notesIndividualMenu {
     margin-left: auto;
 }
