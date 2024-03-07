@@ -14,6 +14,7 @@ if (typeof localStorage !== 'undefined') {
   arr = JSON.parse(localStorage.getItem('localStorageArray') || '[]');
   count = JSON.parse(localStorage.getItem('count') || '[]');
 }
+
 // Function to add a new note to the array and update localStorage
 const localStorageArray = (newNote: Note) => {
   arr.push(newNote);

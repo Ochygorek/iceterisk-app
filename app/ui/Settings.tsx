@@ -5,6 +5,7 @@ import styles from '@/app/sideBar.module.css'
 import SettingsSkeleton from './skeletons/SettingsSkeleton';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 
 function Settings() {
   const [open, setOpen] = useState(false);
@@ -67,8 +68,9 @@ function Settings() {
               height={12}
             />
           </button>
-          <button 
-            onClick={handleDonate} 
+          <Link 
+            href='https://iceterisk.com/donate'
+            target='_blank'
             className={styles.highlight}
           >
             <span>Support Iceterisk</span>
@@ -78,7 +80,7 @@ function Settings() {
               width={12}
               height={12}
             />
-          </button>
+          </Link>
           <button 
             onClick={handleLogout}
           >

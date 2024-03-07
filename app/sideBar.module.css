@@ -35,7 +35,7 @@
 
 .notesSideBarContainer{
     width: 100%;
-    height: fit-content;
+    height: 100%;
 
     overflow: auto;
     text-overflow: ellipsis;
@@ -49,7 +49,6 @@
 .notesSideBar{
     width: 100%;
     height: 100%;
-
 }
 
 .notesIndividual {
@@ -169,7 +168,7 @@
     padding: 8px 0;
 }
 
-.optionsMenu button {
+.optionsMenu button, .optionsMenu a {
     display: flex;
     align-items: center;
     justify-content: space-between;
