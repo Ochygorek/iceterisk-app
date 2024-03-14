@@ -4,6 +4,7 @@ import "./globals.css";
 import SideBar from '@/app/ui/SideBar'
 import styles from '@/app/main.module.css'
 import Link from "next/link";
+import { Analytics } from "@vercel/analytics/react"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -64,6 +65,7 @@ export default function RootLayout({
             </div>
           </section>
         </main>
+        <Analytics />
       </body>
     </html>
   );
