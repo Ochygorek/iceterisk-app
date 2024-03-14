@@ -14,9 +14,9 @@ function AddNoteButton(prop: any) {
   }
 
   return (
-    <Suspense fallback={<ButtonSkeleton />}>
+    // <Suspense fallback={<ButtonSkeleton />}>
       <button className={styles.noteButton} onClick={handleClick}>New Note</button>
-    </Suspense>
+    // </Suspense>
   )
 }
 

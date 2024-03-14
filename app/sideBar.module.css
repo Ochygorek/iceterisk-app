@@ -179,7 +179,7 @@
     padding: 0 16px;
 }
 
-.optionsMenu button:hover {
+.optionsMenu button:hover, .optionsMenu a:hover {
     background-color: var(--third);
 }
 

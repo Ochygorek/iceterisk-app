@@ -7,9 +7,9 @@ function NotesArray(prop: any) {
   // notes
   return (
     <div className={styles.notesSideBar}>
-      <Suspense fallback={<NotesSkeleton />}>
+      {/* <Suspense fallback={<NotesSkeleton />}> */}
         <Note update={prop.update} setUpdate={prop.setUpdate}/>
-      </Suspense>
+      {/* </Suspense> */}
     </div>
   )
 }

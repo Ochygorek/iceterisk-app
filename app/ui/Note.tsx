@@ -84,7 +84,7 @@ function Note(prop: any, {
 
   return (
     <>
-      <Suspense key={query + currentPage} fallback={<NotesSkeleton />}>
+      {/* <Suspense key={query + currentPage} fallback={<NotesSkeleton />}> */}
         {sortedData.map((d) => (
           <div onClick={() => handleRedirect(d.id)} key={d.id} className={styles.notesIndividual}>
             <Image 
@@ -112,7 +112,7 @@ function Note(prop: any, {
             </button>
           </div>
         ))}
-      </Suspense>
+      {/* </Suspense> */}
     </>
   )
 }

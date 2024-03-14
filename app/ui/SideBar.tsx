@@ -25,9 +25,9 @@ function SideBar() {
         <Search />
       </div>
       <div className={styles.notesSideBarContainer}>
-        <Suspense fallback={<NotesSkeleton />}>
+        {/* <Suspense fallback={<NotesSkeleton />}> */}
           <NotesArray update={update} setUpdate={setUpdate} />
-        </Suspense>
+        {/* </Suspense> */}
       </div>
       <div className={styles.noteButtonContainer}>
         <AddNoteButton setUpdate={setUpdate}/>
