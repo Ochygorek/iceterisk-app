@@ -65,14 +65,7 @@ export default function RootLayout({
             </div>
           </section>
         </main>
-        <Analytics 
-          beforeSend={(event) => {
-            if (event.url.startsWith('/')) {
-              return null;
-            }
-            return event;
-          }}
-        />
+        <Analytics />
       </body>
     </html>
   );
