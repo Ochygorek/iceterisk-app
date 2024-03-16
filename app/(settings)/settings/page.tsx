@@ -7,8 +7,8 @@ function Settings() {
   return (
     <div className={styles.root}>
       <h1>Settings</h1>
-      <DeleteNotes />
       <ResetNumbersNotes />
+      <DeleteNotes />
       <span className={styles.disclaimer}>Changes are permanent and there is no confirmation screen.</span>
     </div>
   )

@@ -14,29 +14,31 @@ function NoteMenuBar({
 }: 
   NoteMenuBarProps
 ) {
-  function handleClick() {
-    deleteNote(id)
-    setUpdate((prev: any) => (prev + 1))
-  }
 
   function handleRename() {
     console.log('rename: ', id)
   }
 
   function handleDelete() {
-    console.log('DELETE: ', id)
+    deleteNote(id)
+    setUpdate((prev: any) => (prev + 1))
   }
+
+  /*
+    TODO: make the menu horizontal with only icons and add tooltips
+  */
 
   return (
     <div className={styles.noteMenuBar}>
       <div className={styles.noteMenuInnerContainer}>
-        <button onClick={() => {}}>Close menu</button>
-        <Image
-          src='close.svg'
-          alt='Close image'
-          width={12}
-          height={12}
-        />
+        <button onClick={() => {}}>
+          <Image
+            src='close.svg'
+            alt='Close image'
+            width={12}
+            height={12}
+          />
+        </button>
       </div>
       <div className={styles.menubarDivider}></div>
       {/* <div className={styles.noteMenuInnerContainer}>
@@ -49,13 +51,14 @@ function NoteMenuBar({
         />
       </div> */}
       <div className={styles.noteMenuInnerContainer}>
-        <button onClick={handleClick} className={styles.negative}>Delete</button>
-        <Image
-          src='delete.svg'
-          alt='Close image'
-          width={12}
-          height={12}
-        />
+        <button onClick={handleDelete} className={styles.negative}>
+          <Image
+            src='delete.svg'
+            alt='Close image'
+            width={12}
+            height={12}
+          />
+        </button>
       </div>
     </div>
   )
