@@ -18,15 +18,15 @@ interface noteReturn {
 }
 
 function Note(prop: any, {
-  searchParams,
+  // searchParams,
 }: {
-  searchParams?: {
-    query?: string;
-    page?: string;
-  };
+  // searchParams?: {
+  //   query?: string;
+  //   page?: string;
+  // };
 }) {
-  const query = searchParams?.query || '';
-  const currentPage = Number(searchParams?.page) || 1;
+  // const query = searchParams?.query || '';
+  // const currentPage = Number(searchParams?.page) || 1;
 
   const [pinned, setPinned] = useState<string[]>([]);
   const [show, setShow] = useState<string | null>(null);
@@ -86,7 +86,7 @@ function Note(prop: any, {
     <>
       {/* <Suspense key={query + currentPage} fallback={<NotesSkeleton />}> */}
         {sortedData.map((d) => (
-          <div onClick={() => handleRedirect(d.id)} key={d.id} className={styles.notesIndividual}>
+          <Link href={d.id} key={d.id} className={styles.notesIndividual}>
             <Image 
               src={`${pinned.includes(d.id) ? '/pinfull.svg' : '/pinempty.svg' }`}
               alt='Pin'
@@ -110,7 +110,7 @@ function Note(prop: any, {
               <NoteMenu src={d.image} />
               {show === d.id && <NoteMenuBar id={d.id} setUpdate={prop.setUpdate} />}
             </button>
-          </div>
+          </Link>
         ))}
       {/* </Suspense> */}
     </>
