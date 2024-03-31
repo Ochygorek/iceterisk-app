@@ -128,7 +128,7 @@ export default Editor
 
 // zde
 
-export function Editor({editorId}: {editorId: string}) {
+export function Editor({editorId}: {editorId: string}, {name}: {name: string}) {
   const initialConfig = {
     id: editorId,
     namespace: editorId,
@@ -152,6 +152,7 @@ export function Editor({editorId}: {editorId: string}) {
 
   return (
     <div className={styles.props}>
+      <span className={styles.pageName}>{name}</span>
       <EditorHistoryStateContext>
         <LexicalEditor
           initialConfig={initialConfig}
