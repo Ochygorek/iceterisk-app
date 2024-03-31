@@ -74,12 +74,6 @@ function Note(prop: any, {
     }
   });
   
-  const router = useRouter()
-
-  const handleRedirect = (id: string) => {
-    router.push(id)
-  }
-
   // console.log('notes array render: ')
 
   return (
@@ -107,7 +101,7 @@ function Note(prop: any, {
               onClick={() => handleMenuClick(d.id)}
               className={styles.notesIndividualMenu}
             >
-              <NoteMenu src={d.image} />
+              <NoteMenu />
               {show === d.id && <NoteMenuBar id={d.id} setUpdate={prop.setUpdate} />}
             </button>
           </Link>
