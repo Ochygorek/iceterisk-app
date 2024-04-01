@@ -166,13 +166,3 @@
 .editorSkeletonContainer {
     padding: 10% 0 0 0;
 }
-
-.pageName {
-    margin: 16px;
-
-    font-size: 16px;
-    font-weight: 600;
-    color: var(--font-placeholder);
-
-    min-width: fit-content;
-}

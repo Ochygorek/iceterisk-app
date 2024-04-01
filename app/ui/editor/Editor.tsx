@@ -38,6 +38,7 @@ import {
 } from "@/app/Lexical/context/EditorHistoryState";
 import EditorSkeleton from '@/app/ui/skeletons/EditorSkeleton';
 import Image from 'next/image';
+import { getNameFromLocalStorage } from '@/noteActions/notesPage';
 
 /*
   TODO:
@@ -128,7 +129,7 @@ export default Editor
 
 // zde
 
-export function Editor({editorId}: {editorId: string}, {name}: {name: string}) {
+export function Editor({editorId}: {editorId: string}) {
   const initialConfig = {
     id: editorId,
     namespace: editorId,
@@ -146,13 +147,15 @@ export function Editor({editorId}: {editorId: string}, {name}: {name: string}) {
     },
   };
 
+  const nameNote = getNameFromLocalStorage(editorId)
+
   const content = typeof window !== 'undefined' ? localStorage.getItem(initialConfig.id) : null;
   
   // console.log('content: ', content)
 
   return (
     <div className={styles.props}>
-      <span className={styles.pageName}>{name}</span>
+      <span className={styles.pageName}>{nameNote}</span>
       <EditorHistoryStateContext>
         <LexicalEditor
           initialConfig={initialConfig}
