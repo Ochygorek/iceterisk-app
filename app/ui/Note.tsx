@@ -41,8 +41,6 @@ function Note(prop: any, {
       setNotes(updatedParsedNotes);
     }
   }, [prop.update, notes]);
-  // notes remove ??
-
 
   // change pinned
   const handlePinClick = (id: string) => {
@@ -74,8 +72,6 @@ function Note(prop: any, {
     }
   });
   
-  // console.log('notes array render: ')
-
   return (
     <>
       {/* <Suspense key={query + currentPage} fallback={<NotesSkeleton />}> */}
@@ -89,14 +85,15 @@ function Note(prop: any, {
               onClick={() => handlePinClick(d.id)}
               style={{ cursor: 'pointer' }}
             />
-            <input 
+            {/* <input 
               className={styles.notesNameInputField}
               type="text" 
               placeholder={d.name}
               value={d.name}
               onChange={(e) => (e.target.value)}
               disabled
-            />
+            /> */}
+            <span className={styles.notesNameInputField}>{d.name}</span>
             <button
               onClick={() => handleMenuClick(d.id)}
               className={styles.notesIndividualMenu}

@@ -105,7 +105,8 @@ function LexicalEditor(props: LexicalEditorProps ) {
 
           <RichTextPlugin
             contentEditable={<ContentEditable />}
-            placeholder={<div className={styles.plaveholderDiv}><Image src='/editorplaceholder.svg' alt='Placeholder image for editor window' width={128} height={128}></Image></div>}
+            // placeholder={<div className={styles.plaveholderDiv}><Image src='/editorplaceholder.svg' alt='Placeholder image for editor window' width={128} height={128}></Image></div>}
+            placeholder={null}
             ErrorBoundary={LexicalErrorBoundary}
           />
 
