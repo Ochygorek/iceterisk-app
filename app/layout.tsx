@@ -42,6 +42,7 @@ export const metadata: Metadata = {
     yahoo: 'yahoo',
   },
   metadataBase: new URL('https://app.iceterisk.com'),
+  manifest: '/manifest.json',
 };
 
 export default function RootLayout({
