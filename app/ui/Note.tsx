@@ -76,7 +76,7 @@ function Note(prop: any, {
     <>
       {/* <Suspense key={query + currentPage} fallback={<NotesSkeleton />}> */}
         {sortedData.map((d) => (
-          <Link href={d.id} key={d.id} className={styles.notesIndividual}>
+          <Link href={d.id} key={d.id} className={styles.notesIndividual} onClick={prop.toggleFunction}>
             <Image 
               src={`${pinned.includes(d.id) ? '/pinfull.svg' : '/pinempty.svg' }`}
               alt='Pin'

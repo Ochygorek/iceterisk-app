@@ -64,7 +64,7 @@ function SideBar() {
         }
         <div className={styles.notesSideBarContainer}>
           {/* <Suspense fallback={<NotesSkeleton />}> */}
-            <NotesArray update={update} setUpdate={setUpdate} />
+            <NotesArray update={update} setUpdate={setUpdate} toggleFunction={toggleOpen} />
           {/* </Suspense> */}
         </div>
         <div className={styles.noteButtonContainer}>
@@ -73,7 +73,7 @@ function SideBar() {
         {open &&
           <div className={styles.userAndOptions}>
             <User />
-            <Settings />
+            <Settings toggleFunction={toggleOpen} />
           </div>
         }
       </div>

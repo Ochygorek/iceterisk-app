@@ -7,7 +7,7 @@ import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 
-function Settings() {
+function Settings({toggleFunction}: {toggleFunction?: any}) {
   const [open, setOpen] = useState(false);
   const router = useRouter()
 
@@ -22,16 +22,18 @@ function Settings() {
   const handleSettings = () => {
     router.push('/settings')
     handleClick()
+    toggleFunction()
   }
 
   const handleDonate = () => {
     router.push('https://iceterisk.com/donate')
     handleClick()
-  }
+    }
 
   const handleLogout = () => {
     router.push('/')
     handleClick()
+    toggleFunction()
   }
 
   return (
@@ -65,7 +67,7 @@ function Settings() {
           </button>
           <div className={styles.menuDivider}></div>
           <button 
-            onClick={handleSettings} 
+            onClick={handleSettings}
           >
             <span>Settings</span>
             <svg width="12" height="12" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
