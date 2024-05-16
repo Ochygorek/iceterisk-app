@@ -5,6 +5,10 @@
     height: 100%;
 }
 
+@media (max-width: 600px) {
+    
+}
+
 .sideNavNav {
     height: 100%;
 }
