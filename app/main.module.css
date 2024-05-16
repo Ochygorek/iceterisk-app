@@ -170,3 +170,13 @@
 .editorSkeletonContainer {
     padding: 10% 0 0 0;
 }
+
+@media(max-width: 600px) {
+    .topNavButton {
+        margin: auto;
+    }
+
+    .homeHeading {
+        text-align: center;
+    }
+}

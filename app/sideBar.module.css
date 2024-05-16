@@ -367,4 +367,10 @@
     .two {
         display: flex;
     }
+
+    .optionsMenu {
+        width: 100%;
+        left: 0;
+        right: 0;
+    }
 }
