@@ -17,6 +17,10 @@ function SideBar() {
     setOpen(!open)
   }
 
+  const toggleFalse = () => {
+    setOpen(false)
+  }
+
   return (
     <>
       <div className={`${styles.sideBarContainer} ${styles.one}`}>
@@ -64,7 +68,7 @@ function SideBar() {
         }
         <div className={styles.notesSideBarContainer}>
           {/* <Suspense fallback={<NotesSkeleton />}> */}
-            <NotesArray update={update} setUpdate={setUpdate} toggleFunction={toggleOpen} />
+            <NotesArray update={update} setUpdate={setUpdate} toggleFunction={toggleFalse} />
           {/* </Suspense> */}
         </div>
         <div className={styles.noteButtonContainer}>
